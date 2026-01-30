@@ -63,7 +63,7 @@ function appendMessage(sender, text) {
   if (text === '...') {
     const loadingId = 'loading-' + Date.now();
     msg.id = loadingId;
-    msg.textContent = '💬 Gemini sedang mengetik...';
+    msg.textContent = 'Gemini sedang mengetik...';
     chatBox.appendChild(msg);
     chatBox.scrollTop = chatBox.scrollHeight;
     return loadingId;
